@@ -1,11 +1,12 @@
 ﻿namespace PulseCore;
 
+
 public enum ValveState
 {
     Closed,
     Open,
     Opening,
-    CLosing,
+    Closing,
     Fault
 }
 
@@ -16,7 +17,8 @@ public class TelemetryReading
     public double         Velocity      { get; set; }
     public float          Temperature   { get; set; }
     public ValveState     VState        { get; set; }
-    public Int32          VIN           { get; set; }
+    public UInt32         VIN           { get; set; }
+    public UInt32         Sequence      { get; set; }   
 
 
     public override string ToString()
@@ -28,7 +30,12 @@ public class TelemetryReading
             Velocity:        {Velocity}
             Temperature:     {Temperature}
             Valve State:     {VState}
-            Sequence Number: {SequenceNumber}
+            Sequence Number: {Sequence}
+
+            -- End Reading --
             """;
     }
 }
+
+
+

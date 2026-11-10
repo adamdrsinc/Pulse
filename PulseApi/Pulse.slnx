@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="../PulseCore/PulseCore.csproj" Id="c587572f-a768-4362-922b-6e82908f8969" />
+  <Project Path="../PulseSimulator/PulseSimulator.csproj" Id="3e552064-a783-47dc-a23e-9d07d7d36660" />
+  <Project Path="../PulseTests/PulseTests.csproj" Id="b98e151e-04e7-487e-b938-073f795cf3c0" />
+  <Project Path="PulseApi.csproj" />
+</Solution>

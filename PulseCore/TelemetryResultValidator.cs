@@ -25,7 +25,10 @@ namespace PulseCore
             } else if (r.Velocity < 0)
             {
                 return new TelemetryValidation(false, "Bad Velocity: Negative velocity.");
-            } 
+            } else if (r.Timestamp == default)
+            {
+                return new TelemetryValidation(false, "Bad Timestamp: Timestamp not set.");
+            }
 
             return new TelemetryValidation(true, null);
         }

@@ -8,6 +8,7 @@ namespace PulseCore
 
     public class TelemetryResultValidator
     {
+        //TODO: Add more validation for these fields.
         //public double Altitude { get; set; }
         //public DateTimeOffset Timestamp { get; set; }
         //public double Velocity { get; set; }

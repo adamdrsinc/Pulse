@@ -3,11 +3,11 @@
 
 public enum ValveState
 {
-    Closed,
-    Open,
-    Opening,
-    Closing,
-    Fault
+    CLOSED,
+    OPEN,
+    OPENING,
+    CLOSING,
+    FAULT
 }
 
 public class TelemetryReading
@@ -20,7 +20,6 @@ public class TelemetryReading
     public UInt32         VIN           { get; set; }
     public UInt32         Sequence      { get; set; }   
 
-
     public override string ToString()
     {
         return $"""
@@ -29,7 +28,7 @@ public class TelemetryReading
             Altitude:        {Altitude}
             Velocity:        {Velocity}
             Temperature:     {Temperature}
-            Valve State:     {VState}
+            Valve State:     {nameof(VState)}
             Sequence Number: {Sequence}
 
             -- End Reading --
